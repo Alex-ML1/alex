@@ -16,7 +16,7 @@ class Scratch3YourExtension {
       id: "yourScratchExtension",
 
       // name that will be displayed in the Scratch UI
-      name: "Demo",
+      name: "Alex",
 
       // colours to use for your extension blocks
       color1: "#031C28",
@@ -30,7 +30,7 @@ class Scratch3YourExtension {
       blocks: [
         {
           // name of the function where your block code lives
-          opcode: "testingBlock",
+          opcode: "recognitionBlock",
 
           // type of block - choose from:
           //   BlockType.REPORTER - returns a value, like "direction"
@@ -76,7 +76,7 @@ class Scratch3YourExtension {
    * implementation of the block with the opcode that matches this name
    *  this will be called when the block is used
    */
-  myFirstBlock({ MY_STRING }) {
+  recognitionBlock({ MY_STRING }) {
     const queryString = window.location.search;
 
     const params = new URLSearchParams(queryString);
