@@ -23,10 +23,10 @@ echo "Commit any changes"
 git add your-scratch-extension
 git add dependencies
 git commit -m "Update"
-git push origin master
+git push 
 
 echo "Building the Scratch fork"
-./2-build.sh
+bash 2-build.sh
 
 echo "Preparing a gh-pages branch"
 DEVBRANCH=$(git rev-parse --abbrev-ref HEAD)
