@@ -47,9 +47,9 @@ fi
 
 echo "Publishing the Scratch fork"
 cp -rf $SCRATCH_SRC_HOME/scratch-gui/build/* ./scratch/.
-git add scratch
-git commit -m "Update"
-git push origin gh-pages
+# git add scratch
+# git commit -m "Update"
+# git push origin gh-pages
 
 echo "Returning to dev branch"
 git checkout $DEVBRANCH
