@@ -20,10 +20,10 @@ if [[ $BASH_SOURCE = */* ]]; then
 fi
 
 echo "Commit any changes"
-git add your-scratch-extension
-git add dependencies
-git commit -m "Update"
-git push 
+# git add your-scratch-extension
+# git add dependencies
+# git commit -m "Update"
+# git push 
 
 echo "Building the Scratch fork"
 bash 2-build.sh
